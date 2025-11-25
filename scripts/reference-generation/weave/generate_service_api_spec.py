@@ -12,7 +12,7 @@ from pathlib import Path
 def main():
     """Main function."""
     print("Service API configuration:")
-    print("  Using remote OpenAPI spec: https://trace.wandb.ai/openapi.json")
+    print("  Using remote OpenAPI spec: https://raw.githubusercontent.com/wandb/weave/refs/heads/master/tools/codegen/openapi.json")
     print("  Mintlify will generate documentation for all 41 endpoints")
     print("")
     
@@ -34,7 +34,7 @@ The Weave Service API provides REST endpoints for interacting with the Weave tra
 
 ## Available Endpoints
 
-This documentation is automatically generated from the OpenAPI specification at https://trace.wandb.ai/openapi.json.
+This documentation is automatically generated from the OpenAPI specification at https://raw.githubusercontent.com/wandb/weave/refs/heads/master/tools/codegen/openapi.json.
 
 The API includes endpoints for:
 - **Calls**: Start, end, update, query, and manage traces
