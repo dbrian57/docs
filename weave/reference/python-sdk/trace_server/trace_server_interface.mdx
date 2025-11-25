@@ -245,6 +245,10 @@ serialize_typed_dicts(v: dict[str, Any]) → dict[str, Any]
 
 ## <kbd>class</kbd> `CallsDeleteRes`
 
+**Pydantic Fields:**
+
+- `num_deleted`: `<class 'int'>`
+
 ------
 
 ---
@@ -2314,6 +2318,7 @@ threads_query_stream(req: ThreadsQueryReq) → Iterator[ThreadSchema]
 **Pydantic Fields:**
 
 - `digest`: `<class 'str'>`
+- `object_id`: `typing.Optional[str]`
 
 ------
 
@@ -2950,6 +2955,7 @@ The code field contains the actual source code of the op.
 
 - `project_id`: `<class 'str'>`
 - `traces`: `typing.Any`
+- `wb_run_id`: `typing.Optional[str]`
 - `wb_user_id`: `typing.Optional[str]`
 
 ------
@@ -3456,6 +3462,7 @@ Extends ScoreCreateBody by adding project_id for internal API usage.
 - `started_at`: `<class 'datetime.datetime'>`
 - `attributes`: `dict[str, typing.Any]`
 - `inputs`: `dict[str, typing.Any]`
+- `otel_dump`: `typing.Optional[dict[str, typing.Any]]`
 - `wb_user_id`: `typing.Optional[str]`
 - `wb_run_id`: `typing.Optional[str]`
 - `wb_run_step`: `typing.Optional[int]`

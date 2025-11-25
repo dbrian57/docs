@@ -940,25 +940,14 @@
                   {
                     "group": "Python SDK",
                     "pages": [
-                      "weave/reference/python-sdk",
                       {
-                        "group": "Core",
+                        "group": "Other",
                         "pages": [
                           "weave/reference/python-sdk/trace/feedback",
                           "weave/reference/python-sdk/trace/op",
                           "weave/reference/python-sdk/trace/util",
-                          "weave/reference/python-sdk/trace/weave_client"
-                        ]
-                      },
-                      {
-                        "group": "Trace Server",
-                        "pages": [
-                          "weave/reference/python-sdk/trace_server/trace_server_interface"
-                        ]
-                      },
-                      {
-                        "group": "Trace Server Bindings",
-                        "pages": [
+                          "weave/reference/python-sdk/trace/weave_client",
+                          "weave/reference/python-sdk/trace_server/trace_server_interface",
                           "weave/reference/python-sdk/trace_server_bindings/remote_http_trace_server"
                         ]
                       }
@@ -967,7 +956,6 @@
                   {
                     "group": "TypeScript SDK",
                     "pages": [
-                      "weave/reference/typescript-sdk",
                       {
                         "group": "Classes",
                         "pages": [
@@ -975,6 +963,7 @@
                           "weave/reference/typescript-sdk/classes/Evaluation",
                           "weave/reference/typescript-sdk/classes/EvaluationLogger",
                           "weave/reference/typescript-sdk/classes/MessagesPrompt",
+                          "weave/reference/typescript-sdk/classes/ObjectRef",
                           "weave/reference/typescript-sdk/classes/ScoreLogger",
                           "weave/reference/typescript-sdk/classes/StringPrompt",
                           "weave/reference/typescript-sdk/classes/WeaveClient",
