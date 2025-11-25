@@ -1017,10 +1017,7 @@
                     "pages": [
                       "weave/reference/service-api"
                     ],
-                    "openapi": {
-                      "source": "weave/reference/service-api/openapi.json",
-                      "directory": "weave/reference/service-api"
-                    }
+                    "openapi": "https://raw.githubusercontent.com/wandb/weave/v0.52.17/sdks/node/weave.openapi.json"
                   }
                 ]
               },

@@ -952,7 +952,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/TableCreateRes"
+                  "$ref": "#/components/schemas/TableCreateFromDigestsRes"
                 }
               }
             }
@@ -6359,6 +6359,19 @@
           "row_digests"
         ],
         "title": "TableCreateFromDigestsReq"
+      },
+      "TableCreateFromDigestsRes": {
+        "properties": {
+          "digest": {
+            "type": "string",
+            "title": "Digest"
+          }
+        },
+        "type": "object",
+        "required": [
+          "digest"
+        ],
+        "title": "TableCreateFromDigestsRes"
       },
       "TableCreateReq": {
         "properties": {
