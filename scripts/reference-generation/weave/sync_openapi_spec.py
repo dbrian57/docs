@@ -17,7 +17,7 @@ import sys
 from typing import Optional, Tuple
 
 
-def fetch_remote_spec(url: str = "https://trace.wandb.ai/openapi.json") -> dict:
+def fetch_remote_spec(url: str = "https://raw.githubusercontent.com/wandb/weave/refs/heads/master/tools/codegen/openapi.json") -> dict:
     """Fetch the OpenAPI spec from the remote service."""
     print(f"  Fetching remote spec from {url}...")
     try:
@@ -100,7 +100,7 @@ def update_docs_json(use_local: bool = False):
                                     print("  ✓ Updated docs.json to use local OpenAPI spec")
                                 else:
                                     # Use remote spec
-                                    ref_page["openapi"] = {"source": "https://trace.wandb.ai/openapi.json"}
+                                    ref_page["openapi"] = {"source": "https://raw.githubusercontent.com/wandb/weave/refs/heads/master/tools/codegen/openapi.json"}
                                     print("  ✓ Updated docs.json to use remote OpenAPI spec")
                                 
                                 with open(docs_json_path, 'w') as f:
@@ -117,7 +117,7 @@ def main():
     print("Syncing OpenAPI specification...")
     
     local_spec_path = Path("weave/reference/service-api/openapi.json")
-    remote_url = "https://trace.wandb.ai/openapi.json"
+    remote_url = "https://raw.githubusercontent.com/wandb/weave/refs/heads/master/tools/codegen/openapi.json"
     
     # Fetch remote spec
     remote_spec = fetch_remote_spec(remote_url)
@@ -183,7 +183,7 @@ def main():
         if using_local:
             print(f"\n  ℹ Currently using local OpenAPI spec ({local_spec_path})")
         else:
-            print("\n  ℹ Currently using remote OpenAPI spec (https://trace.wandb.ai/openapi.json)")
+            print("\n  ℹ Currently using remote OpenAPI spec (https://raw.githubusercontent.com/wandb/weave/refs/heads/master/tools/codegen/openapi.json)")
         
         print("\n  Tip: Use --use-local to configure docs.json to use the local spec")
         print("       Use --use-remote to configure docs.json to use the remote spec")
